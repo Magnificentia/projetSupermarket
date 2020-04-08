@@ -23,11 +23,12 @@ import javafx.stage.Stage;
  * @author _Nprime496_
  */
 public class ProjetBd extends Application {
+    private JFXTabPane menus;
     
     @Override
     public void start(Stage primaryStage) throws IOException {
         
-        JFXTabPane menus=new JFXTabPane();
+        menus=new JFXTabPane();
         
         Pane p=FXMLLoader.load(ProjetBd.class.getResource("/views/testview/testview.fxml"));
         Tab d=new Tab("acceuil",p);
