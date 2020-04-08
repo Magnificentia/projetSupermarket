@@ -3,7 +3,7 @@
  */
 
 .root{
-    -fx-background-image:url('styles\1e.jpg');
+    -fx-background-image:url('../ressources/1e.jpg');
     -fx-background-size:100% 100%;
 
 }
