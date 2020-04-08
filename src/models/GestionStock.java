@@ -78,6 +78,4 @@ public class GestionStock {
         this.produit = produit;
     }
     
-    
-    
 }

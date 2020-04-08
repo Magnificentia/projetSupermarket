@@ -5,11 +5,14 @@
  */
 package projetbd;
 
+import com.jfoenix.controls.JFXTabPane;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Tab;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
@@ -31,8 +34,13 @@ public class ProjetBd extends Application {
             }
         });
         
+        JFXTabPane menus=new JFXTabPane();
+        Tab d=new Tab("acceuil");
+        Tab f=new Tab("produit");
+        Tab e=new Tab("A propos");
+        menus.getTabs().addAll(d,e,f);
         StackPane root = new StackPane();
-        root.getChildren().add(btn);
+        root.getChildren().add(menus);
         
         Scene scene = new Scene(root, 300, 250);
         
