@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import jfxtras.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="815.0" prefWidth="1248.0" styleClass="root" stylesheets="@login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER" prefHeight="781.0" prefWidth="1123.0" style="-fx-background-image: url('imageTest.jpg');" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox prefHeight="380.0" prefWidth="367.0" spacing="2.0" style="-fx-background-color: #ffffff;">
+               <HBox.margin>
+                  <Insets bottom="150.0" top="150.0" />
+               </HBox.margin>
+               <children>
+                  <HBox alignment="CENTER" prefHeight="151.0" prefWidth="367.0">
+                     <children>
+                        <ImageView fitHeight="85.0" fitWidth="97.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@icons8-vêtements-100.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="21.0" prefWidth="99.0" style="-fx-text-fill: #2ECC71; -fx-font-size: 35;" text="EShop">
+                           <HBox.margin>
+                              <Insets top="35.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="83.0" prefWidth="425.0">
+                     <children>
+                        <ImageView fitHeight="44.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@user2%20(2).png" />
+                           </image>
+                        </ImageView>
+                        <JFXTextField focusColor="#2ecc71" labelFloat="true" prefHeight="31.0" prefWidth="244.0" promptText="Enter your Name">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="77.0" prefWidth="425.0">
+                     <children>
+                        <ImageView fitHeight="46.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@padlock.png" />
+                           </image>
+                        </ImageView>
+                        <JFXTextField focusColor="#2ecc71" labelFloat="true" prefHeight="31.0" prefWidth="244.0" promptText="Enter your password">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="130.0" prefWidth="367.0">
+                     <children>
+                        <JFXButton prefHeight="53.0" prefWidth="309.0" style="-fx-background-color: #2ECC71; -fx-font-weight: bold; -fx-text-fill: white;" text="Se Connecter">
+                           <HBox.margin>
+                              <Insets top="20.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

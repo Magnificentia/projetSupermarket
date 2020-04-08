@@ -1,0 +1,9 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.root{
+    -fx-background-image:url('../ressources/1e.jpg');
+    -fx-background-size:100% 100%;
+
+}
