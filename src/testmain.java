@@ -31,19 +31,18 @@ public class testmain extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
 
-        //LA ZONE A MODIFIER
-        
-        
-        
-        //fin de zone
-        
         StackPane root = new StackPane();
-        Pane p=FXMLLoader.load(ProjetBd.class.getResource("/views/testview/testview.fxml"));
-        root.getChildren().add(p);
         
+        //LA ZONE A MODIFIER, changer le chemin 
+        
+        String chemin="testview/testview.fxml";//il faut changer cette variable pour qu'elle corresponde à votre vue
+        Pane p=FXMLLoader.load(ProjetBd.class.getResource("/views/"+chemin));
+        root.getChildren().add(p);
         Scene scene = new Scene(root, 300, 250);
         
-        primaryStage.setTitle("Hello World!");
+        //FINZONE
+        
+        primaryStage.setTitle("Pane de test");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
