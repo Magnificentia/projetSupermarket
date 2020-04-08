@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import jfxtras.scene.layout.VBox?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="815.0" prefWidth="1248.0" styleClass="root" stylesheets="@login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="815.0" prefWidth="1248.0" styleClass="root" stylesheets="@../../styles/login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <HBox alignment="CENTER" prefHeight="781.0" prefWidth="1123.0" style="-fx-background-image: url('imageTest.jpg');" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -26,7 +26,7 @@
                               <Insets />
                            </HBox.margin>
                            <image>
-                              <Image url="@icons8-vêtements-100.png" />
+                              <Image url="@../../ressources/icons8-vêtements-100.png" />
                            </image>
                         </ImageView>
                         <Label prefHeight="21.0" prefWidth="99.0" style="-fx-text-fill: #2ECC71; -fx-font-size: 35;" text="EShop">
@@ -43,7 +43,7 @@
                               <Insets />
                            </HBox.margin>
                            <image>
-                              <Image url="@user2%20(2).png" />
+                              <Image url="@../../ressources/user2%20(2).png" />
                            </image>
                         </ImageView>
                         <JFXTextField focusColor="#2ecc71" labelFloat="true" prefHeight="31.0" prefWidth="244.0" promptText="Enter your Name">
@@ -60,7 +60,7 @@
                               <Insets />
                            </HBox.margin>
                            <image>
-                              <Image url="@padlock.png" />
+                              <Image url="@../../ressources/padlock.png" />
                            </image>
                         </ImageView>
                         <JFXTextField focusColor="#2ecc71" labelFloat="true" prefHeight="31.0" prefWidth="244.0" promptText="Enter your password">
