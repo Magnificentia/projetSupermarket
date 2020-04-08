@@ -3,15 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package projetbd;
 
-import com.jfoenix.controls.JFXTabPane;
+
+import java.io.IOException;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Tab;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
@@ -20,27 +20,26 @@ import javafx.stage.Stage;
  *
  * @author _Nprime496_
  */
-public class ProjetBd extends Application {
+public class testmain extends Application {
+    /*
+    
+    ceci est un main de test, il a pour but de pouvoir tester vos vues sans interferer avec le reste de l' application
+    il suffit de mentionner le chemin de votre vue pour tester que tout va bien, les parametres
+    de connection a la bd seront dans le code en dur, il n'y a pas besoin de s'y interresser
+    */
     
     @Override
-    public void start(Stage primaryStage) {
-        Button btn = new Button();
-        btn.setText("Say 'Hello World'");
-        btn.setOnAction(new EventHandler<ActionEvent>() {
-            
-            @Override
-            public void handle(ActionEvent event) {
-                System.out.println("Hello World!");
-            }
-        });
+    public void start(Stage primaryStage) throws IOException {
+
+        //LA ZONE A MODIFIER
         
-        JFXTabPane menus=new JFXTabPane();
-        Tab d=new Tab("acceuil");
-        Tab f=new Tab("produit");
-        Tab e=new Tab("A propos");
-        menus.getTabs().addAll(d,e,f);
+        
+        
+        //fin de zone
+        
         StackPane root = new StackPane();
-        root.getChildren().add(menus);
+        Pane p=FXMLLoader.load(ProjetBd.class.getResource("/views/testview/testview.fxml"));
+        root.getChildren().add(p);
         
         Scene scene = new Scene(root, 300, 250);
         
